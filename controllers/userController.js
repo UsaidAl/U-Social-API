@@ -1,6 +1,6 @@
 const { User } = require("../models");
 
-const userControl = {
+const userController = {
   get_all_users(req, res) {
     User.find({})
       .populate({
